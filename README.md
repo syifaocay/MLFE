@@ -135,6 +135,7 @@ Algoritma boosting telah ada sejak puluhan tahun lalu. Namun, baru beberapa tahu
 
 Salah satu alasannya adalah peningkatan algoritma boosting dalam kompetisi machine learning atau data science. Algoritma ini sangat powerful dalam meningkatkan akurasi prediksi. Algoritma boosting sering mengungguli model yang lebih sederhana seperti logistic regression dan random forest. Beberapa pemenang kompetisi di platform Kaggle menyatakan bahwa mereka menggunakan algoritma boosting atau kombinasi beberapa algoritma boosting dalam modelnya. Meskipun demikian, hal ini tetap bergantung pada kasus per kasus, ruang lingkup masalah, dan dataset yang digunakan.
 
+
   _Dapat disimpulkan model terbaik yang digunakan untuk dataset ini ialah model KNN di mana KNN memiliki nilai error terkecil dan nilai akurasi yang tinggi ketimbang kedua model lainnya(cek pada bagian Evaluasi)_
  
 ## Evaluation
@@ -152,3 +153,13 @@ Berikut ini perbandingan grafik metrik MSE pada ketiga model:
 <image src='https://github.com/syifaocay/MLFE/blob/main/mse.png' width= 500/>
 <br> Selain akurasi untuk menentukan model terbaik dapat dilihat juga berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. jika dilihat dari gambar di atas KNN lah model yang memiliki tingkat eror terendah dibandingkan dengan model lainnya.
 
+<br>berikut perbandingan nilai error MSE yaitu :
+
+- KNN  : 5.385045 (train), 7.326169(uji)
+- RF   : 1.02805(train), 49.738891(uji)
+- BA   : 6.116459(train), 115.669911(uji)
+
+## Sumber Refrensi
+https://www.kaggle.com/datasets/sudalairajkumar/cryptocurrencypricehistory?select=coin_Ethereum.csv
+https://www.pajakku.com/read/627b5434a9ea8709cb189f93/Cryptocurrency:-Definisi-Karakterisik-Fungsi-dan-Legitimasinya-Dalam-Pajak
+https://katadata.co.id/safrezi/digital/61b170f652225/apa-itu-ethereum-memahami-sejarah-cara-kerja-dan-komponennya
