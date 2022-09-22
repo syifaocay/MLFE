@@ -76,20 +76,32 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
   - Mengidentifikasi Missing Value dan Outlier
     <br>
     <image src='https://github.com/syifaocay/MLFE/blob/main/outlier.png' width= 500/>
-    <br> Terlihat jika di atas banyak terdapat outlier pada setiap variabel, lalu untuk mengatasinya nantinya penulis akan menerapkan batas bawah dan batas atas menggunakan metode IQR
+    
+    _Gambar 1.Mengidentifikasi outlier_
+    
+    <br> Terlihat jika di atas banyak terdapat outlier pada setiap variabel, lalu untuk mengatasinya nantinya penulis akan menerapkan batas bawah dan batas atas menggunakan metode IQR. Hal pertama yang perlu Anda lakukan adalah membuat batas bawah dan batas atas. Untuk membuat batas bawah, kurangi Q1 dengan 1,5 * IQR. Kemudian, untuk membuat batas atas, tambahkan 1.5 * IQR dengan Q3.
     
   - Univariate Analysis
     <br>
     <image src='https://github.com/syifaocay/MLFE/blob/main/2.png' width= 500/>
+    
+    _Gambar 2.Univariate Analysis_
+    
     <br> Terlihat pada grafik bahwa semua data cenderung distribusi nilainya miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model nantinya.
     
   - Multivariate Analysis
     <br>
     <image src='https://github.com/syifaocay/MLFE/blob/main/1.png' width= 500/>
+    
+    _Gambar 3.Multivariate Analysis_
+    
     <br> Terlihat bahwa pada grafik kebanyakan bernilai positif karena kebanyakan grafik pada sumbu y dan x mengalami peningkatan yang cukup signifikan membentuk sebuah garis lurus.
     
     <br>
     <image src='https://github.com/syifaocay/MLFE/blob/main/korelasi.png' width= 500/>
+    
+    _Gambar 4.korelasi matrix_
+    
     <br> Terlihat pada matriks korelasi di atas dapat disimpulkan bahwa semua variabel memiliki keterikatan dan korelasi yang kuat antar variabel lainnya, dimana nilai korelasi antar variabel bernilai lebih dari 0.8 atau mendekati 1.
   
 ## Data Preparation
