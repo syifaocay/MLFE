@@ -75,15 +75,16 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
   
   - Mengidentifikasi Missing Value dan Outlier
     <br>
-    <image src='https://user-images.githubusercontent.com/69046629/191802718-c7c3fdae-b94b-4426-ba09-1b50455429f2.png' width= 500/>
-    
+    ![outlier](https://user-images.githubusercontent.com/69046629/191803488-14174dbd-89e9-480d-b8f9-c9b418d9cf0f.png)
+
     _Gambar 1.Mengidentifikasi outlier_
     
     <br> Terlihat jika di atas banyak terdapat outlier pada setiap variabel, lalu untuk mengatasinya nantinya penulis akan menerapkan batas bawah dan batas atas menggunakan metode IQR. Hal pertama yang perlu Anda lakukan adalah membuat batas bawah dan batas atas. Untuk membuat batas bawah, kurangi Q1 dengan 1,5 * IQR. Kemudian, untuk membuat batas atas, tambahkan 1.5 * IQR dengan Q3.
     
   - Univariate Analysis
     <br>
-    <image src='https://github.com/syifaocay/MLFE/blob/main/2.png' width= 500/>
+    ![unvariate](https://user-images.githubusercontent.com/69046629/191804030-2c663c7c-2059-4d7e-b78c-85852c4e3476.png)
+
     
     _Gambar 2.Univariate Analysis_
     
@@ -91,14 +92,16 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
     
   - Multivariate Analysis
     <br>
-    <image src='https://github.com/syifaocay/MLFE/blob/main/1.png' width= 500/>
+    ![multivariate](https://user-images.githubusercontent.com/69046629/191804137-5d29bcf6-c2c0-4665-90aa-0979c188305b.png)
+
     
     _Gambar 3.Multivariate Analysis_
     
     <br> Terlihat bahwa pada grafik kebanyakan bernilai positif karena kebanyakan grafik pada sumbu y dan x mengalami peningkatan yang cukup signifikan membentuk sebuah garis lurus.
     
     <br>
-    <image src='https://github.com/syifaocay/MLFE/blob/main/korelasi.png' width= 500/>
+    ![korelasi](https://user-images.githubusercontent.com/69046629/191804214-da8c1a35-86dc-40a2-a9dd-23a1b1b75156.png)
+
     
     _Gambar 4.korelasi matrix_
     
@@ -123,10 +126,14 @@ KNN bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain deng
 
 Meskipun algoritma KNN mudah dipahami dan digunakan, ia memiliki kekurangan jika dihadapkan pada jumlah fitur atau dimensi yang besar. Permasalahan ini sering disebut sebagai curse of dimensionality (kutukan dimensi). Pada dasarnya, permasalahan ini muncul ketika jumlah sampel meningkat secara eksponensial seiring dengan jumlah dimensi (fitur) pada data. Jadi, jika Anda menggunakan model KNN, pastikan data yang digunakan memiliki fitur yang relatif sedikit, ya!
 
+Di akhir, nilai akurasi yang kita dapat dalam K-Nearest Neighbor adalah 79.778878%
+
 - **Random Forest**
   <br> Algoritma random forest adalah salah satu algoritma supervised learning. Ia dapat digunakan untuk menyelesaikan masalah klasifikasi dan regresi. Random forest juga merupakan algoritma yang sering digunakan karena cukup sederhana tetapi memiliki stabilitas yang mumpuni. 
 
 Random forest merupakan salah satu model machine learning yang termasuk ke dalam kategori ensemble (group) learning. Apa itu model ensemble? Sederhananya, ia merupakan model prediksi yang terdiri dari beberapa model dan bekerja secara bersama-sama. Ide dibalik model ensemble adalah sekelompok model yang bekerja bersama menyelesaikan masalah. Sehingga, tingkat keberhasilan akan lebih tinggi dibanding model yang bekerja sendirian. Pada model ensemble, setiap model harus membuat prediksi secara independen. Kemudian, prediksi dari setiap model ensemble ini digabungkan untuk membuat prediksi akhir. 
+
+Di akhir, nilai akurasi yang kita dapat dalam Random Forest adalah -37.285420%
 
 - **Boosting Algorithm**
  Seperti namanya, boosting, algoritma ini bertujuan untuk meningkatkan performa atau akurasi prediksi. Caranya adalah dengan menggabungkan beberapa model sederhana dan dianggap lemah (weak learners) sehingga membentuk suatu model yang kuat (strong ensemble learner). Algoritma boosting muncul dari gagasan mengenai apakah algoritma yang sederhana seperti linear regression dan decision tree dapat dimodifikasi untuk dapat meningkatkan performa. 
@@ -137,10 +144,15 @@ Salah satu alasannya adalah peningkatan algoritma boosting dalam kompetisi machi
 
 
   _Dapat disimpulkan model terbaik yang digunakan untuk dataset ini ialah model KNN di mana KNN memiliki nilai error terkecil dan nilai akurasi yang tinggi ketimbang kedua model lainnya(cek pada bagian Evaluasi)_
+  
+  Di akhir, nilai akurasi yang kita dapat dalam Boosting Algorithm adalah -219.263093%
+
  
 ## Evaluation
 Pada proyek ini, metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik **akurasi** dan **MSE**. Akurasi di sini merupakan tingkat keakuratan data prediksi yang didasarkan dari data latih pada model, tingkat akurasi tertinggi ialah pada model KNN sebesar 89.16% dan ini menunjukkan bahwasannya KNN merupakan model terbaik dari kedua model lainnya dalam memprediksi nilai **Bitcoin** di masa mendatang. MSE sendiri merupakan _Mean Squared Error_ yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan dalam persamaan berikut: <br>
+
 <image src='https://www.pythonpool.com/wp-content/uploads/2021/08/20210812_200937_0000-1024x270.png' width= 500/>
+
 <br> Keterangan:
 - N = jumlah dataset
 - yi = nilai sebenarnya
@@ -150,7 +162,7 @@ Sebelum menggunakan metrik MSE, harus dilakukan scaling fitur numerik terlebih d
 
 Berikut ini perbandingan grafik metrik MSE pada ketiga model:
 <br>
-<image src='https://github.com/syifaocay/MLFE/blob/main/mse.png' width= 500/>
+![mse](https://user-images.githubusercontent.com/69046629/191804350-4a44ba09-5d48-4a62-a27e-3f838279d969.png)
 <br> Selain akurasi untuk menentukan model terbaik dapat dilihat juga berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. jika dilihat dari gambar di atas KNN lah model yang memiliki tingkat eror terendah dibandingkan dengan model lainnya.
 
 <br>berikut perbandingan nilai error MSE yaitu :
