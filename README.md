@@ -75,7 +75,7 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
   
   - Mengidentifikasi Missing Value dan Outlier
     <br>
-    <image src='https://github.com/syifaocay/MLFE/blob/main/outlier.png' width= 500/>
+    <image src='https://user-images.githubusercontent.com/69046629/191802718-c7c3fdae-b94b-4426-ba09-1b50455429f2.png' width= 500/>
     
     _Gambar 1.Mengidentifikasi outlier_
     
